@@ -1,17 +1,17 @@
 package pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import utilities.Driver;
 
 import java.util.List;
 
-public class LoginPage {
+public class LoginPageTestBase {
+    public LoginPageTestBase(WebDriver driver) {
 
-    public LoginPage() {
+        PageFactory.initElements(driver,this);
 
-        PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(linkText = "Kundenportal")
@@ -54,4 +54,11 @@ public class LoginPage {
     @FindBy(xpath = "Der von Ihnen angegebene Benutzername wird bereits verwendet.")
     public WebElement verwendeterBenutzernameMeldung;
 
+    @FindBy(xpath = "//*[contains(text(),' Minimum 6 Zeichen')]")
+    public WebElement minimum6ZeichenMeldung;
+    @FindBy(xpath = "//*[text()='Der Benutzername darf keine Umlaute oder Leerzeichen beinhalten, als Sonderzeichen sind nur . @ _ - erlaubt']")
+    public WebElement ungueltigerBenutzernameMeldung;
+
+    @FindBy(xpath = "//p[contains(text(),'Leider ist ein technisches Problem')]")
+    public WebElement tecnischesProblemMeldung;
 }

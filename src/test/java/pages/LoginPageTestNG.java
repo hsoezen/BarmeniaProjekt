@@ -1,18 +1,25 @@
 package pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
+import utilities.DriverTestNG;
 
 import java.util.List;
 
-public class LoginPage {
+public class LoginPageTestNG {
 
-    public LoginPage() {
+    public LoginPageTestNG(WebDriver driver) {
 
-        PageFactory.initElements(Driver.getDriver(), this);
+
+        PageFactory.initElements(driver, this);
     }
+
+    @FindBy( linkText = ("Speichern"))
+    public WebElement zustimmen;
 
     @FindBy(linkText = "Kundenportal")
     public WebElement kundenPortalButton;
@@ -53,5 +60,9 @@ public class LoginPage {
 
     @FindBy(xpath = "Der von Ihnen angegebene Benutzername wird bereits verwendet.")
     public WebElement verwendeterBenutzernameMeldung;
+
+    @FindBy(xpath = "//*[contains(text(),' Minimum 6 Zeichen')]")
+    public WebElement minimum6ZeichenMeldung;
+
 
 }

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="LidlParalelTest">
+    <test name="test1" parallel="methods" thread-count="6">
+        <groups>
+            <run>
+                <include name="smoke"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="testsThread.US_001_TC_003_Benutzername_Voraussetzungen"></class>
+            <class name="testsThread.US_001_TC_002_Email_Voraussetzungen"></class>
+        </classes>
+    </test>
+</suite>

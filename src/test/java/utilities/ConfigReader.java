@@ -18,7 +18,7 @@ public class ConfigReader {
             properties.load(fileInputStream);
             fileInputStream.close();
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
     public static String getProperty(String key){

@@ -1,7 +1,5 @@
-package utilities;
+package tests;
 
-
-import io.cucumber.java.bs.I;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -11,6 +9,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import pages.LoginPage;
+import utilities.Driver;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,7 +25,8 @@ public class Hooks {
 
     }
     @AfterSuite
-    public void tearDown() throws IOException {
-        Driver.getDriver().close();
+    public void tearDown() throws Exception {
+        Driver.closeDriver();
     }
+
 }
