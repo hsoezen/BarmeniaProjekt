@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="paralel">
+    <test name="name" parallel="classes" thread-count="2">
+        <classes>
+            <class name="testsThread.US_001_TC_003_Benutzername_Voraussetzungen">
+                <methods>
+                    <include name="US001_TC_003_Benutzernahme_Voraussetzungen_mindestens_6_Zeichen"></include>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
