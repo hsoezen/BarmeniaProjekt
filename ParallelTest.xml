@@ -4,7 +4,7 @@
     <test name="zwei Test">
         <classes>
 
-            <class name="tests.US_001_Mein_Barmenia_Registirieren"></class>
+            <class name="testsThread.US_001_TC_001_Registirierung_mit_gueltigen_Daten"></class>
         </classes>
     </test>
 </suite>
