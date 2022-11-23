@@ -1,12 +1,16 @@
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\tests\US_002.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\testsThread\US_001_TC_003_Benutzername_Voraussetzungen.java
+C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\docker\DockerTest2.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\probe\LidlTest2.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\probe\WarumNichtParallel.java
+C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\tests\Eclipse.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\pages\LoginPage.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\utilities\Driver.java
+C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\utilities\TestBaseThreadDocker.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\utilities\dataProviders\DataProviderTNG.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\probe\FehlerEx.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\tests\FehlerEx2.java
+C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\docker\DockerTest3.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\utilities\DriverTestNG.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\probe\LidlTest3.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\tests\Hooks.java
@@ -14,6 +18,7 @@ C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\pages\LoginPageTestBase.j
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\probe\ThreadTest.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\tests\US_001_Mein_Barmenia_Registirieren.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\utilities\ConfigReader.java
+C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\testsThread\TestMitDocker.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\utilities\TestBaseThread.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\utilities\dataProviders\DataProviderUS_001.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\probe\DataProviderTest.java
@@ -21,5 +26,7 @@ C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\testsThread\US_001_TC_002
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\testsThread\US_001_TC_001_Registirierung_mit_gueltigen_Daten.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\utilities\TestBase.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\pages\LoginPageTestNG.java
+C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\utilities\DriverDocker.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\probe\LidlTest1.java
 C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\utilities\ReusableMethods.java
+C:\Users\hsoezen\IdeaProjects\BarmeniaHS\src\test\java\docker\DockerTest.java

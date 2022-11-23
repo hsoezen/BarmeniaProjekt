@@ -18,7 +18,7 @@ public class US_001_TC_003_Benutzername_Voraussetzungen extends TestBaseThread {
 
     @Test(groups = {"smoke", "regression", "login"})
 
-    public void US001_TC_003_Benutzernahme_Voraussetzungen_mindestens_6_Zeichen() {
+    public void US001_TC_003_Benutzernahme_Voraussetzungen_mindestens_6_Zeichen() throws IOException, InterruptedException {
 
         LoginPageTestBase loginPageTestBase = new LoginPageTestBase(threadLocalDriver.get());
         Actions actions = new Actions(threadLocalDriver.get());
@@ -43,6 +43,8 @@ public class US_001_TC_003_Benutzername_Voraussetzungen extends TestBaseThread {
         actions.sendKeys(Keys.TAB).perform();
 
         Assert.assertTrue(loginPageTestBase.minimum6ZeichenMeldung.isDisplayed());
+        Thread.sleep(1000);
+        ReusableMethods.getScreenshots(threadLocalDriver.get(), "6 Zeichen");
 
     }
     @Test(groups = {"regression"}, dataProvider = "BenutzerName", dataProviderClass = DataProviderUS_001.class)

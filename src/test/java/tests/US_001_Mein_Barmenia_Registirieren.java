@@ -15,6 +15,7 @@ import utilities.ReusableMethods;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -26,6 +27,9 @@ public class US_001_Mein_Barmenia_Registirieren  {
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 
     JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+
+    public US_001_Mein_Barmenia_Registirieren() throws MalformedURLException {
+    }
 
     @Test()
 
@@ -63,6 +67,7 @@ public class US_001_Mein_Barmenia_Registirieren  {
         loginPage.jetzRegisterButton.click();
 
         //Assert.assertTrue(loginPage.registrierungsMeldung.getText().contains(ConfigReader.getProperty("titel_registirierung_meldung")));
+
         Driver.closeDriver();
     }
 
