@@ -17,7 +17,7 @@ public class DockerTest {
 
     WebDriver driver;
     static final String APP_URL = "https://www.google.com";
-    static final String HOST_URL = "http://localhost:4444";
+    static final String HOST_URL = "http://127.0.0.1:4444";
 
     @BeforeMethod
     public void setUp() throws MalformedURLException {
