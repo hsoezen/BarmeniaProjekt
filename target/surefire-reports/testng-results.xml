@@ -1,85 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="2425" started-at="2022-11-23T13:14:05 MEZ" finished-at="2022-11-23T13:14:07 MEZ">
+  <suite name="inTerminalDurhfuerhren" duration-ms="2152" started-at="2022-11-23T13:27:34 MEZ" finished-at="2022-11-23T13:27:36 MEZ">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="2425" started-at="2022-11-23T13:14:05 MEZ" finished-at="2022-11-23T13:14:07 MEZ">
+    <test name="Terminal" duration-ms="2152" started-at="2022-11-23T13:27:34 MEZ" finished-at="2022-11-23T13:27:36 MEZ">
       <class name="docker.DockerTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:docker.DockerTest@2833cc44]" name="setUp" is-config="true" duration-ms="1054" started-at="2022-11-23T13:14:05 MEZ" finished-at="2022-11-23T13:14:06 MEZ">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:docker.DockerTest@27a8c74e]" name="setUp" is-config="true" duration-ms="1020" started-at="2022-11-23T13:27:34 MEZ" finished-at="2022-11-23T13:27:35 MEZ">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:docker.DockerTest@2833cc44]" name="test1" duration-ms="1105" started-at="2022-11-23T13:14:06 MEZ" finished-at="2022-11-23T13:14:07 MEZ">
+        <test-method status="PASS" signature="test1()[pri:0, instance:docker.DockerTest@27a8c74e]" name="test1" duration-ms="1033" started-at="2022-11-23T13:27:35 MEZ" finished-at="2022-11-23T13:27:36 MEZ">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:docker.DockerTest@2833cc44]" name="tearDown" is-config="true" duration-ms="149" started-at="2022-11-23T13:14:07 MEZ" finished-at="2022-11-23T13:14:07 MEZ">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:docker.DockerTest@27a8c74e]" name="tearDown" is-config="true" duration-ms="80" started-at="2022-11-23T13:27:36 MEZ" finished-at="2022-11-23T13:27:36 MEZ">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- docker.DockerTest -->
-      <class name="probe.ThreadTest">
-        <test-method status="PASS" signature="thread()[pri:0, instance:probe.ThreadTest@27a8c74e]" name="thread" duration-ms="90" started-at="2022-11-23T13:14:07 MEZ" finished-at="2022-11-23T13:14:07 MEZ">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- thread -->
-        <test-method status="PASS" signature="thread1()[pri:0, instance:probe.ThreadTest@27a8c74e]" name="thread1" duration-ms="0" started-at="2022-11-23T13:14:07 MEZ" finished-at="2022-11-23T13:14:07 MEZ">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- thread1 -->
-      </class> <!-- probe.ThreadTest -->
-      <class name="probe.DataProviderTest">
-        <test-method status="PASS" signature="addierenTest(int, int)[pri:0, instance:probe.DataProviderTest@33f88ab]" name="addierenTest" duration-ms="1" started-at="2022-11-23T13:14:07 MEZ" data-provider="dProvider" finished-at="2022-11-23T13:14:07 MEZ">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addierenTest -->
-        <test-method status="PASS" signature="addierenTest(int, int)[pri:0, instance:probe.DataProviderTest@33f88ab]" name="addierenTest" duration-ms="0" started-at="2022-11-23T13:14:07 MEZ" data-provider="dProvider" finished-at="2022-11-23T13:14:07 MEZ">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addierenTest -->
-        <test-method status="PASS" signature="addierenTest(int, int)[pri:0, instance:probe.DataProviderTest@33f88ab]" name="addierenTest" duration-ms="0" started-at="2022-11-23T13:14:07 MEZ" data-provider="dProvider" finished-at="2022-11-23T13:14:07 MEZ">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[13]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addierenTest -->
-      </class> <!-- probe.DataProviderTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Terminal -->
+  </suite> <!-- inTerminalDurhfuerhren -->
 </testng-results>
