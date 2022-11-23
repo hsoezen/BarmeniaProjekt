@@ -2,24 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="inTerminalDurhfuerhren" duration-ms="2152" started-at="2022-11-23T13:27:34 MEZ" finished-at="2022-11-23T13:27:36 MEZ">
+  <suite name="paralel test" duration-ms="14123" started-at="2022-11-23T13:45:55 MEZ" finished-at="2022-11-23T13:46:09 MEZ">
     <groups>
     </groups>
-    <test name="Terminal" duration-ms="2152" started-at="2022-11-23T13:27:34 MEZ" finished-at="2022-11-23T13:27:36 MEZ">
-      <class name="docker.DockerTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:docker.DockerTest@27a8c74e]" name="setUp" is-config="true" duration-ms="1020" started-at="2022-11-23T13:27:34 MEZ" finished-at="2022-11-23T13:27:35 MEZ">
+    <test name="zwei Test" duration-ms="14123" started-at="2022-11-23T13:45:55 MEZ" finished-at="2022-11-23T13:46:09 MEZ">
+      <class name="testsThread.US_001_TC_001_Registirierung_mit_gueltigen_Daten">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testsThread.US_001_TC_001_Registirierung_mit_gueltigen_Daten@4b1c1ea0]" name="setUp" is-config="true" duration-ms="287" started-at="2022-11-23T13:45:55 MEZ" finished-at="2022-11-23T13:45:55 MEZ">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:docker.DockerTest@27a8c74e]" name="test1" duration-ms="1033" started-at="2022-11-23T13:27:35 MEZ" finished-at="2022-11-23T13:27:36 MEZ">
+        <test-method status="PASS" signature="beforeMthd()[pri:0, instance:testsThread.US_001_TC_001_Registirierung_mit_gueltigen_Daten@4b1c1ea0]" name="beforeMthd" is-config="true" duration-ms="1774" started-at="2022-11-23T13:45:55 MEZ" finished-at="2022-11-23T13:45:57 MEZ">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:docker.DockerTest@27a8c74e]" name="tearDown" is-config="true" duration-ms="80" started-at="2022-11-23T13:27:36 MEZ" finished-at="2022-11-23T13:27:36 MEZ">
+        </test-method> <!-- beforeMthd -->
+        <test-method status="PASS" signature="TC_001_Registirierung_mit_gueltigen_Daten()[pri:0, instance:testsThread.US_001_TC_001_Registirierung_mit_gueltigen_Daten@4b1c1ea0]" name="TC_001_Registirierung_mit_gueltigen_Daten" duration-ms="11335" started-at="2022-11-23T13:45:57 MEZ" finished-at="2022-11-23T13:46:08 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_001_Registirierung_mit_gueltigen_Daten -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testsThread.US_001_TC_001_Registirierung_mit_gueltigen_Daten@4b1c1ea0]" name="tearDown" is-config="true" duration-ms="710" started-at="2022-11-23T13:46:08 MEZ" finished-at="2022-11-23T13:46:09 MEZ">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- docker.DockerTest -->
-    </test> <!-- Terminal -->
-  </suite> <!-- inTerminalDurhfuerhren -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testsThread.US_001_TC_001_Registirierung_mit_gueltigen_Daten@4b1c1ea0]" name="afterClass" is-config="true" duration-ms="0" started-at="2022-11-23T13:46:09 MEZ" finished-at="2022-11-23T13:46:09 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testsThread.US_001_TC_001_Registirierung_mit_gueltigen_Daten -->
+    </test> <!-- zwei Test -->
+  </suite> <!-- paralel test -->
 </testng-results>
