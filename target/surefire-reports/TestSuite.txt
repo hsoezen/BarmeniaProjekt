@@ -1,20 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.316 s <<< FAILURE! - in TestSuite
-docker.DockerTest2.dockerTest  Time elapsed: 4.986 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'FCU-NBK819', ip: '192.168.43.189'
-Build info: version: '4.5.1', revision: 'fcc4df1bc9c'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}], desiredCapabilities=Capabilities {browserName: chrome}}]
-Capabilities {}
-	at docker.DockerTest2.dockerTest(DockerTest2.java:21)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:4441
-	at docker.DockerTest2.dockerTest(DockerTest2.java:21)
-Caused by: java.net.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:4441
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:4441
-Caused by: java.net.ConnectException: Connection refused: no further information
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.702 s - in TestSuite
