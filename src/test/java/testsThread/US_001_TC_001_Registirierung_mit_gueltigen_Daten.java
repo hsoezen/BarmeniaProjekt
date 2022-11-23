@@ -59,5 +59,6 @@ public class US_001_TC_001_Registirierung_mit_gueltigen_Daten extends TestBaseTh
 
         //Assert.assertTrue(loginPageTestBase.registrierungsMeldung.getText().contains(ConfigReader.getProperty("titel_registirierung_meldung")));
         ReusableMethods.getScreenshots(threadLocalDriver.get(), "US_001_TC_001");
+        System.out.println("DockerJenkinsTest");
     }
 }
