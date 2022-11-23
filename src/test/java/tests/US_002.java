@@ -8,11 +8,16 @@ import pages.LoginPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
+import java.net.MalformedURLException;
+
 public class US_002 {
     LoginPage loginPage = new LoginPage();
 
     //WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
     JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+
+    public US_002() throws MalformedURLException {
+    }
 
     @Test
     public void test1() throws Exception {

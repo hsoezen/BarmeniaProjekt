@@ -15,7 +15,7 @@ public class US_001_TC_002_Email_Voraussetzungen extends TestBaseThread {
 
     @Test(groups = {"smoke"}, dataProvider = "EMail", dataProviderClass = DataProviderUS_001.class)
 
-    public void TC_002_Die_EMail_Adresse_soll_AT_Zeichen_enthalten(String email) throws InterruptedException, IOException {
+    public void TC_002_Die_EMail_Adresse_soll_diese_Zeichen_enthalten(String email) throws InterruptedException, IOException {
 
         LoginPageTestBase loginPageTestBase = new LoginPageTestBase(threadLocalDriver.get());
         Actions actions = new Actions(threadLocalDriver.get());

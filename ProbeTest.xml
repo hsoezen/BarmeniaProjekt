@@ -4,7 +4,7 @@
 
         <classes>
 
-            <class name="testsThread.US_001_TC_003_Benutzername_Voraussetzungen"></class>
+            <class name="docker.DockerTest2"></class>
 
         </classes>
 

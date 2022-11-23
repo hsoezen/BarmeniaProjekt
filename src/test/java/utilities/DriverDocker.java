@@ -1,32 +1,33 @@
 package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import io.github.bonigarcia.wdm.managers.OperaDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
-import org.openqa.selenium.safari.SafariDriver;
-
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
 
-public class Driver {
-        private Driver() {
+public class DriverDocker {
+        private DriverDocker() {
 
         }
         static private WebDriver driver;
+        static private String HUB_URL="http://localhost:4444";
 
-        static public WebDriver getDriver() {
+        static public WebDriver getDriver() throws MalformedURLException {
             if (driver == null) {
 
                 switch (ConfigReader.getProperty("browser")) {
                     case "chrome":
-                        WebDriverManager.chromedriver().setup();
-                        driver = new ChromeDriver();
+                        DesiredCapabilities desiredCapabilities= new DesiredCapabilities();
+                        desiredCapabilities.setBrowserName("chrome");
+
+                        driver = new RemoteWebDriver(new URL(HUB_URL), desiredCapabilities);
                         break;
 
                     case "edge":
@@ -47,7 +48,7 @@ public class Driver {
         }
         static public void closeDriver() {
             if (driver != null) {
-                driver.close();
+                driver.quit();
                 driver = null;
             }
         }
