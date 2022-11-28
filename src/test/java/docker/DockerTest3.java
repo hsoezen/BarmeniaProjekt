@@ -12,6 +12,7 @@ public class DockerTest3 {
     public static void main(String[] args) throws MalformedURLException {
 
         String HUB_URL="http://localhost:4444";
+
         DesiredCapabilities desiredCapabilities =new DesiredCapabilities();
         desiredCapabilities.setBrowserName("chrome");
 

@@ -16,5 +16,6 @@ public class Eclipse {
         WebElement shadowroot = (WebElement) js.executeScript("return document.querySelector(\"#usercentrics-root\").shadowRoot.querySelector(\"#uc-center-container > div.sc-jJoQJp.dTzACB > div > div.sc-bBHxTw.hgPqkm > div > button.sc-gsDKAQ.bSyuWe\")");
         shadowroot.click();
         Driver.getDriver().findElement(By.xpath("//a[contains(text(),'Kundenportal ')]")).click();
+        Driver.closeDriver();
     }
 }

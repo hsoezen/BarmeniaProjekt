@@ -10,6 +10,7 @@ utilities\dataProviders\DataProviderTNG.class
 probe\LidlTest2.class
 probe\WarumNichtParallel.class
 tests\Hooks.class
+docker\DockerTest4MitDockerDriver.class
 probe\FehlerEx.class
 utilities\DriverTestNG.class
 testsThread\US_001_TC_002_Email_Voraussetzungen.class
@@ -17,7 +18,6 @@ utilities\ReusableMethods.class
 docker\DockerTest3.class
 tests\US_002.class
 testsThread\US_001_TC_001_Registirierung_mit_gueltigen_Daten.class
-probe\ThreadTest.class
 tests\Eclipse.class
 utilities\Driver.class
 utilities\dataProviders\DataProviderUS_001.class
