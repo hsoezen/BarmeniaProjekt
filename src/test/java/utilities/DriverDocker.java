@@ -1,10 +1,6 @@
 package utilities;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -13,46 +9,35 @@ import java.net.URL;
 import java.time.Duration;
 
 public class DriverDocker {
-        private DriverDocker() {
+    private DriverDocker() {
+
+    }
+
+    static private WebDriver driver;
+    static private String HUB_URL = "http://localhost:4444";
+
+    static public WebDriver getDriver() throws MalformedURLException {
+        if (driver == null) {
+
+            DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+            desiredCapabilities.setBrowserName("chrome");
+
+            driver = new RemoteWebDriver(new URL(HUB_URL), desiredCapabilities);
 
         }
-        static private WebDriver driver;
-        static private String HUB_URL="http://localhost:4444";
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-        static public WebDriver getDriver() throws MalformedURLException {
-            if (driver == null) {
+        driver.manage().window().maximize();
+        return driver;
+    }
 
-                switch (ConfigReader.getProperty("browser")) {
-                    case "chrome":
-                        DesiredCapabilities desiredCapabilities= new DesiredCapabilities();
-                        desiredCapabilities.setBrowserName("chrome");
-
-                        driver = new RemoteWebDriver(new URL(HUB_URL), desiredCapabilities);
-                        break;
-
-                    case "edge":
-                        WebDriverManager.edgedriver().setup();
-                        driver = new EdgeDriver();
-                        break;
-
-                    case "firefox":
-                        WebDriverManager.firefoxdriver().setup();
-                        driver = new FirefoxDriver();
-                        break;
-                }
-            }
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
-            driver.manage().window().maximize();
-            return driver;
-        }
-        static public void closeDriver() {
-            if (driver != null) {
-                driver.quit();
-                driver = null;
-            }
+    static public void closeDriver() {
+        if (driver != null) {
+            driver.quit();
+            driver = null;
         }
     }
+}
 /*
 public class Driver {
 
