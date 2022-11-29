@@ -16,7 +16,7 @@ public class DockerTest3 {
         DesiredCapabilities desiredCapabilities =new DesiredCapabilities();
         desiredCapabilities.setBrowserName("chrome");
 
-        WebDriver driver = new RemoteWebDriver(new URL(HUB_URL),desiredCapabilities);
+        RemoteWebDriver driver = new RemoteWebDriver(new URL(HUB_URL),desiredCapabilities);
 
         driver.get("https://www.fincon.eu");
         System.out.println(driver.getTitle());
