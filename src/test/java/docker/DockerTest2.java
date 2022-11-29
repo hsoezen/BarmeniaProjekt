@@ -18,7 +18,7 @@ public class DockerTest2 {
         desiredCapabilities.setBrowserName("chrome");
         System.out.println("Hallo");
 
-        driver = new RemoteWebDriver(new URL("http://localhost:4444"), desiredCapabilities);
+        driver = new RemoteWebDriver(new URL("http://localhost:4441"), desiredCapabilities);
 
         System.out.println("Hallo2");
 
