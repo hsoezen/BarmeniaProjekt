@@ -33,8 +33,6 @@ public class DockerTest {
         driver.get(APP_URL);
         System.out.println("Hallo von ");
         System.out.println(driver.getTitle());
-
-
     }
 
     @AfterMethod
