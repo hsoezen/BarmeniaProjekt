@@ -23,6 +23,7 @@ utilities\Driver.class
 utilities\dataProviders\DataProviderUS_001.class
 utilities\TestBaseThread.class
 utilities\DriverDocker.class
+docker\DockerStartStop.class
 probe\LidlTest3.class
 utilities\ConfigReader.class
 pages\LoginPageTestBase.class
