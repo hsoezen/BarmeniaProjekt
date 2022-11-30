@@ -3,9 +3,10 @@
     <test name="Terminal">
 
         <classes>
+            <class name="docker.DockerStartStop"></class>
             <class name="docker.DockerTest"></class>
         </classes>
 
     </test>
 
-</suite>
+</suite>gi
