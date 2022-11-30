@@ -3,7 +3,7 @@
     <test name="Terminal">
 
         <classes>
-           <class name="testsThread.US_001_TC_001_Registirierung_mit_gueltigen_Daten"></class>
+           <class name="docker.DockerTest"></class>
         </classes>
 
     </test>
