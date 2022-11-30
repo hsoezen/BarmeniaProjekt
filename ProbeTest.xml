@@ -3,7 +3,7 @@
     <test name="Terminal">
 
         <classes>
-           <class name="docker.DockerTest"></class>
+           <class name="docker.DockerTest2"></class>
         </classes>
 
     </test>
