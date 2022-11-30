@@ -144,6 +144,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;inTerminalDurhfuerhren&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Terminal&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;docker.DockerStartStop&quot;/&gt;
       &lt;class name=&quot;docker.DockerTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Terminal --&gt;
@@ -158,7 +159,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Terminal (1 class)</span>
+                <span class="test-name">Terminal (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,12 +189,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test1')
 data.setCell(0, 2, 'docker.DockerTest')
-data.setCell(0, 3, 1234);
+data.setCell(0, 3, 982);
 window.suiteTableData['inTerminalDurhfuerhren']= { tableData: data, tableDiv: 'times-div-inTerminalDurhfuerhren'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 982 ms</span>
               <div id="times-div-inTerminalDurhfuerhren">
               </div> <!-- times-div-inTerminalDurhfuerhren -->
             </div> <!-- times-div -->
@@ -219,19 +220,33 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">docker.DockerStartStop</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startDockerGrid</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">docker.DockerTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">15043 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test1</span>
-                <span class="method-start">1313 ms</span>
+                <span class="method-start">16432 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">2548 ms</span>
+                <span class="method-start">17416 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">docker.DockerStartStop</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">stopDockerGrid</span>
+                <span class="method-start">17575 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

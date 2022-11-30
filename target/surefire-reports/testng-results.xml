@@ -2,24 +2,34 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="inTerminalDurhfuerhren" duration-ms="2701" started-at="2022-11-30T08:21:57 MEZ" finished-at="2022-11-30T08:22:00 MEZ">
+  <suite name="inTerminalDurhfuerhren" duration-ms="22596" started-at="2022-11-30T09:20:36 MEZ" finished-at="2022-11-30T09:20:58 MEZ">
     <groups>
     </groups>
-    <test name="Terminal" duration-ms="2701" started-at="2022-11-30T08:21:57 MEZ" finished-at="2022-11-30T08:22:00 MEZ">
+    <test name="Terminal" duration-ms="22596" started-at="2022-11-30T09:20:36 MEZ" finished-at="2022-11-30T09:20:58 MEZ">
       <class name="docker.DockerTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:docker.DockerTest@d44fc21]" name="setUp" is-config="true" duration-ms="1312" started-at="2022-11-30T08:21:57 MEZ" finished-at="2022-11-30T08:21:58 MEZ">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:docker.DockerTest@64729b1e]" name="setUp" is-config="true" duration-ms="1389" started-at="2022-11-30T09:20:51 MEZ" finished-at="2022-11-30T09:20:52 MEZ">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:docker.DockerTest@d44fc21]" name="test1" duration-ms="1234" started-at="2022-11-30T08:21:58 MEZ" finished-at="2022-11-30T08:21:59 MEZ">
+        <test-method status="PASS" signature="test1()[pri:0, instance:docker.DockerTest@64729b1e]" name="test1" duration-ms="982" started-at="2022-11-30T09:20:52 MEZ" finished-at="2022-11-30T09:20:53 MEZ">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:docker.DockerTest@d44fc21]" name="tearDown" is-config="true" duration-ms="130" started-at="2022-11-30T08:21:59 MEZ" finished-at="2022-11-30T08:22:00 MEZ">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:docker.DockerTest@64729b1e]" name="tearDown" is-config="true" duration-ms="157" started-at="2022-11-30T09:20:53 MEZ" finished-at="2022-11-30T09:20:53 MEZ">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- docker.DockerTest -->
+      <class name="docker.DockerStartStop">
+        <test-method status="PASS" signature="startDockerGrid()[pri:0, instance:docker.DockerStartStop@4e7dc304]" name="startDockerGrid" is-config="true" duration-ms="15021" started-at="2022-11-30T09:20:36 MEZ" finished-at="2022-11-30T09:20:51 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDockerGrid -->
+        <test-method status="PASS" signature="stopDockerGrid()[pri:0, instance:docker.DockerStartStop@4e7dc304]" name="stopDockerGrid" is-config="true" duration-ms="5019" started-at="2022-11-30T09:20:53 MEZ" finished-at="2022-11-30T09:20:58 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDockerGrid -->
+      </class> <!-- docker.DockerStartStop -->
     </test> <!-- Terminal -->
   </suite> <!-- inTerminalDurhfuerhren -->
 </testng-results>
