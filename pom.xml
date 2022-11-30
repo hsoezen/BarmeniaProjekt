@@ -61,7 +61,7 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <!--suppress UnresolvedMavenProperty -->
-                    <suiteXmlFiles>${xmlTestFile}</suiteXmlFiles>
+                    <suiteXmlFiles>ProbeTest.xml</suiteXmlFiles>
                 </configuration>
             </plugin>
         </plugins>
