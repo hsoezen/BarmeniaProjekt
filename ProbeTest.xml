@@ -3,8 +3,7 @@
     <test name="Terminal">
 
         <classes>
-            <class name="docker.DockerStartStop"></class>
-            <class name="docker.DockerTest"></class>
+           <class name="testsThread.US_001_TC_001_Registirierung_mit_gueltigen_Daten"></class>
         </classes>
 
     </test>
