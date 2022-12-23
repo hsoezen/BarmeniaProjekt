@@ -22,30 +22,28 @@ import java.util.Date;
 
 public class US_001_Mein_Barmenia_Registirieren  {
 
-    LoginPage loginPage = new LoginPage();
-    Actions actions = new Actions(Driver.getDriver());
-    WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-
-    JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
-
-    public US_001_Mein_Barmenia_Registirieren() throws MalformedURLException {
-    }
+    static LoginPage loginPage = new LoginPage();
+    static Actions actions = new Actions(Driver.getDriver());
+    static WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 
     @Test()
 
     public void TC_001_Registirierung_mit_gueltigen_Daten() throws InterruptedException, IOException {
 
+
         Driver.getDriver().get(ConfigReader.getProperty("base_url"));
 
+        Thread.sleep(3000);
        ReusableMethods.cookiesShadowRootElementClick("alleakzeptieren_cookies_shadow");
 
+       Thread.sleep(6000);
         loginPage.kundenPortalButton.click();
 
-        wait.until(ExpectedConditions.visibilityOf(loginPage.webWersion)).click();
+       wait.until(ExpectedConditions.visibilityOf(loginPage.webWersion)).click();
 
         loginPage.registrierungButton.click();
 
-        ReusableMethods.cookiesShadowRootElementClick("registirierung_cookies_shadow");
+        ReusableMethods.cookiesShadowRootElementClick("nur_wesentliche_cookies_shadow");
 
         loginPage.emailTextFeld.click();
         actions.sendKeys(ConfigReader.getProperty("gueltige_email_registerierung")).perform();
@@ -74,25 +72,22 @@ public class US_001_Mein_Barmenia_Registirieren  {
 
     @Test
     public void TC_002_Die_EMail_Adresse_soll_AT_Zeichen_enthalten() throws Exception {
+        LoginPage loginPage = new LoginPage();
+        Actions actions = new Actions(Driver.getDriver());
 
         Driver.getDriver().get(ConfigReader.getProperty("base_url"));
-        try {
-            WebElement shadowCookies= (WebElement) js.executeScript("return document.querySelector(\"#usercentrics-root\").shadowRoot.querySelector(\"#uc-center-container > div.sc-jJoQJp.dTzACB > div > div.sc-bBHxTw.hgPqkm > div > button.sc-gsDKAQ.bSyuWe\")");
-            shadowCookies.click();
-        }catch (Exception e){
-            System.out.println("Da Element ist nicht verfügbar!");
-        }
 
+        ReusableMethods.cookiesShadowRootElementClick("alleakzeptieren_cookies_shadow");
 
-        wait.until(ExpectedConditions.visibilityOf(loginPage.kundenPortalButton));
         loginPage.kundenPortalButton.click();
 
-        //wait.until(ExpectedConditions.visibilityOf(loginPage.webWersion));
+        wait.until(ExpectedConditions.visibilityOf(loginPage.webWersion));
         loginPage.webWersion.click();
 
+        Thread.sleep(3000);
         loginPage.registrierungButton.click();
 
-        ReusableMethods.cookiesShadowRootElementClick("registirierung_cookies_shadow");
+        ReusableMethods.cookiesShadowRootElementClick("nur_wesentliche_cookies_shadow");
 
         loginPage.emailTextFeld.click();
         actions.sendKeys(ConfigReader.getProperty("email_ohne_At_zeichen")).perform();
@@ -112,6 +107,6 @@ public class US_001_Mein_Barmenia_Registirieren  {
             System.out.println("Die Jetzt Registrieren Taste ist nicht sichtbar!");
         }
 
-        Driver.closeDriver();
+       Driver.closeDriver();
     }
 }

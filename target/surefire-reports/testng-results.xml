@@ -1,25 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="inTerminalDurhfuerhren" duration-ms="2085" started-at="2022-11-30T10:46:26 MEZ" finished-at="2022-11-30T10:46:28 MEZ">
+  <suite name="inTerminalDurhfuerhren" duration-ms="61018" started-at="2022-12-02T16:51:13 MEZ" finished-at="2022-12-02T16:52:14 MEZ">
     <groups>
+      <group name="regression">
+        <method signature="US_001_TC_003_Benutzername_Voraussetzungen.US001_TC_003_Benutzernahme_Voraussetzungen_mindestens_6_Zeichen()[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="US001_TC_003_Benutzernahme_Voraussetzungen_mindestens_6_Zeichen" class="testsThread.US_001_TC_003_Benutzername_Voraussetzungen"/>
+        <method signature="US_001_TC_003_Benutzername_Voraussetzungen.US001_TC_003_Benutzernahme_Voraussetzungen_sonderZeichenUsw(java.lang.String)[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="US001_TC_003_Benutzernahme_Voraussetzungen_sonderZeichenUsw" class="testsThread.US_001_TC_003_Benutzername_Voraussetzungen"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="US_001_TC_003_Benutzername_Voraussetzungen.US001_TC_003_Benutzernahme_Voraussetzungen_mindestens_6_Zeichen()[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="US001_TC_003_Benutzernahme_Voraussetzungen_mindestens_6_Zeichen" class="testsThread.US_001_TC_003_Benutzername_Voraussetzungen"/>
+      </group> <!-- smoke -->
+      <group name="login">
+        <method signature="US_001_TC_003_Benutzername_Voraussetzungen.US001_TC_003_Benutzernahme_Voraussetzungen_mindestens_6_Zeichen()[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="US001_TC_003_Benutzernahme_Voraussetzungen_mindestens_6_Zeichen" class="testsThread.US_001_TC_003_Benutzername_Voraussetzungen"/>
+      </group> <!-- login -->
     </groups>
-    <test name="Terminal" duration-ms="2085" started-at="2022-11-30T10:46:26 MEZ" finished-at="2022-11-30T10:46:28 MEZ">
-      <class name="docker.DockerTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:docker.DockerTest@d44fc21]" name="setUp" is-config="true" duration-ms="1039" started-at="2022-11-30T10:46:26 MEZ" finished-at="2022-11-30T10:46:27 MEZ">
+    <test name="test1 " duration-ms="61018" started-at="2022-12-02T16:51:13 MEZ" finished-at="2022-12-02T16:52:14 MEZ">
+      <class name="testsThread.US_001_TC_003_Benutzername_Voraussetzungen">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="setUp" is-config="true" duration-ms="495" started-at="2022-12-02T16:51:13 MEZ" finished-at="2022-12-02T16:51:14 MEZ">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:docker.DockerTest@d44fc21]" name="test1" duration-ms="955" started-at="2022-11-30T10:46:27 MEZ" finished-at="2022-11-30T10:46:28 MEZ">
+        <test-method status="PASS" signature="beforeMthd()[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="beforeMthd" is-config="true" duration-ms="1850" started-at="2022-12-02T16:51:14 MEZ" finished-at="2022-12-02T16:51:15 MEZ">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:docker.DockerTest@d44fc21]" name="tearDown" is-config="true" duration-ms="73" started-at="2022-11-30T10:46:28 MEZ" finished-at="2022-11-30T10:46:28 MEZ">
+        </test-method> <!-- beforeMthd -->
+        <test-method status="PASS" signature="beforeMthd()[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="beforeMthd" is-config="true" duration-ms="1835" started-at="2022-12-02T16:51:14 MEZ" finished-at="2022-12-02T16:51:15 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMthd -->
+        <test-method status="PASS" signature="US001_TC_003_Benutzernahme_Voraussetzungen_mindestens_6_Zeichen()[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="US001_TC_003_Benutzernahme_Voraussetzungen_mindestens_6_Zeichen" duration-ms="17286" started-at="2022-12-02T16:51:15 MEZ" finished-at="2022-12-02T16:51:33 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- US001_TC_003_Benutzernahme_Voraussetzungen_mindestens_6_Zeichen -->
+        <test-method status="PASS" signature="US001_TC_003_Benutzernahme_Voraussetzungen_sonderZeichenUsw(java.lang.String)[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="US001_TC_003_Benutzernahme_Voraussetzungen_sonderZeichenUsw" duration-ms="18823" started-at="2022-12-02T16:51:15 MEZ" data-provider="BenutzerName" finished-at="2022-12-02T16:51:34 MEZ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AJonas/a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- US001_TC_003_Benutzernahme_Voraussetzungen_sonderZeichenUsw -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="tearDown" is-config="true" duration-ms="743" started-at="2022-12-02T16:51:33 MEZ" finished-at="2022-12-02T16:51:33 MEZ">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- docker.DockerTest -->
-    </test> <!-- Terminal -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="tearDown" is-config="true" duration-ms="737" started-at="2022-12-02T16:51:34 MEZ" finished-at="2022-12-02T16:51:35 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMthd()[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="beforeMthd" is-config="true" duration-ms="2052" started-at="2022-12-02T16:51:35 MEZ" finished-at="2022-12-02T16:51:37 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMthd -->
+        <test-method status="PASS" signature="US001_TC_003_Benutzernahme_Voraussetzungen_sonderZeichenUsw(java.lang.String)[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="US001_TC_003_Benutzernahme_Voraussetzungen_sonderZeichenUsw" duration-ms="16205" started-at="2022-12-02T16:51:37 MEZ" data-provider="BenutzerName" finished-at="2022-12-02T16:51:53 MEZ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jona s]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- US001_TC_003_Benutzernahme_Voraussetzungen_sonderZeichenUsw -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="tearDown" is-config="true" duration-ms="721" started-at="2022-12-02T16:51:53 MEZ" finished-at="2022-12-02T16:51:54 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMthd()[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="beforeMthd" is-config="true" duration-ms="1125" started-at="2022-12-02T16:51:54 MEZ" finished-at="2022-12-02T16:51:55 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMthd -->
+        <test-method status="PASS" signature="US001_TC_003_Benutzernahme_Voraussetzungen_sonderZeichenUsw(java.lang.String)[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="US001_TC_003_Benutzernahme_Voraussetzungen_sonderZeichenUsw" duration-ms="18265" started-at="2022-12-02T16:51:55 MEZ" data-provider="BenutzerName" finished-at="2022-12-02T16:52:13 MEZ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jonasü]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- US001_TC_003_Benutzernahme_Voraussetzungen_sonderZeichenUsw -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="tearDown" is-config="true" duration-ms="726" started-at="2022-12-02T16:52:13 MEZ" finished-at="2022-12-02T16:52:14 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testsThread.US_001_TC_003_Benutzername_Voraussetzungen@1f7030a6]" name="afterClass" is-config="true" duration-ms="0" started-at="2022-12-02T16:52:14 MEZ" finished-at="2022-12-02T16:52:14 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testsThread.US_001_TC_003_Benutzername_Voraussetzungen -->
+    </test> <!-- test1  -->
   </suite> <!-- inTerminalDurhfuerhren -->
+  <suite name="paralel test" duration-ms="87573" started-at="2022-12-02T16:52:14 MEZ" finished-at="2022-12-02T16:53:42 MEZ">
+    <groups>
+      <group name="smoke">
+        <method signature="US_001_TC_002_Email_Voraussetzungen.TC_002_Die_EMail_Adresse_soll_diese_Zeichen_enthalten(java.lang.String)[pri:0, instance:testsThread.US_001_TC_002_Email_Voraussetzungen@34cd072c]" name="TC_002_Die_EMail_Adresse_soll_diese_Zeichen_enthalten" class="testsThread.US_001_TC_002_Email_Voraussetzungen"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="zwei Test" duration-ms="87573" started-at="2022-12-02T16:52:14 MEZ" finished-at="2022-12-02T16:53:42 MEZ">
+      <class name="testsThread.US_001_TC_002_Email_Voraussetzungen">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testsThread.US_001_TC_002_Email_Voraussetzungen@34cd072c]" name="setUp" is-config="true" duration-ms="11" started-at="2022-12-02T16:52:14 MEZ" finished-at="2022-12-02T16:52:14 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeMthd()[pri:0, instance:testsThread.US_001_TC_002_Email_Voraussetzungen@34cd072c]" name="beforeMthd" is-config="true" duration-ms="1119" started-at="2022-12-02T16:52:14 MEZ" finished-at="2022-12-02T16:52:15 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMthd -->
+        <test-method status="PASS" signature="TC_002_Die_EMail_Adresse_soll_diese_Zeichen_enthalten(java.lang.String)[pri:0, instance:testsThread.US_001_TC_002_Email_Voraussetzungen@34cd072c]" name="TC_002_Die_EMail_Adresse_soll_diese_Zeichen_enthalten" duration-ms="26005" started-at="2022-12-02T16:52:15 MEZ" data-provider="EMail" finished-at="2022-12-02T16:52:41 MEZ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_002_Die_EMail_Adresse_soll_diese_Zeichen_enthalten -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testsThread.US_001_TC_002_Email_Voraussetzungen@34cd072c]" name="tearDown" is-config="true" duration-ms="729" started-at="2022-12-02T16:52:41 MEZ" finished-at="2022-12-02T16:52:42 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMthd()[pri:0, instance:testsThread.US_001_TC_002_Email_Voraussetzungen@34cd072c]" name="beforeMthd" is-config="true" duration-ms="1109" started-at="2022-12-02T16:52:42 MEZ" finished-at="2022-12-02T16:52:43 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMthd -->
+        <test-method status="PASS" signature="TC_002_Die_EMail_Adresse_soll_diese_Zeichen_enthalten(java.lang.String)[pri:0, instance:testsThread.US_001_TC_002_Email_Voraussetzungen@34cd072c]" name="TC_002_Die_EMail_Adresse_soll_diese_Zeichen_enthalten" duration-ms="27327" started-at="2022-12-02T16:52:43 MEZ" data-provider="EMail" finished-at="2022-12-02T16:53:10 MEZ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@abc.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_002_Die_EMail_Adresse_soll_diese_Zeichen_enthalten -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testsThread.US_001_TC_002_Email_Voraussetzungen@34cd072c]" name="tearDown" is-config="true" duration-ms="718" started-at="2022-12-02T16:53:10 MEZ" finished-at="2022-12-02T16:53:11 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMthd()[pri:0, instance:testsThread.US_001_TC_002_Email_Voraussetzungen@34cd072c]" name="beforeMthd" is-config="true" duration-ms="1120" started-at="2022-12-02T16:53:11 MEZ" finished-at="2022-12-02T16:53:12 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMthd -->
+        <test-method status="PASS" signature="TC_002_Die_EMail_Adresse_soll_diese_Zeichen_enthalten(java.lang.String)[pri:0, instance:testsThread.US_001_TC_002_Email_Voraussetzungen@34cd072c]" name="TC_002_Die_EMail_Adresse_soll_diese_Zeichen_enthalten" duration-ms="14046" started-at="2022-12-02T16:53:12 MEZ" data-provider="EMail" finished-at="2022-12-02T16:53:26 MEZ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@dcom]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_002_Die_EMail_Adresse_soll_diese_Zeichen_enthalten -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testsThread.US_001_TC_002_Email_Voraussetzungen@34cd072c]" name="tearDown" is-config="true" duration-ms="1129" started-at="2022-12-02T16:53:26 MEZ" finished-at="2022-12-02T16:53:27 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMthd()[pri:0, instance:testsThread.US_001_TC_002_Email_Voraussetzungen@34cd072c]" name="beforeMthd" is-config="true" duration-ms="1118" started-at="2022-12-02T16:53:27 MEZ" finished-at="2022-12-02T16:53:29 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMthd -->
+        <test-method status="PASS" signature="TC_002_Die_EMail_Adresse_soll_diese_Zeichen_enthalten(java.lang.String)[pri:0, instance:testsThread.US_001_TC_002_Email_Voraussetzungen@34cd072c]" name="TC_002_Die_EMail_Adresse_soll_diese_Zeichen_enthalten" duration-ms="12400" started-at="2022-12-02T16:53:29 MEZ" data-provider="EMail" finished-at="2022-12-02T16:53:41 MEZ">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@d.set]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_002_Die_EMail_Adresse_soll_diese_Zeichen_enthalten -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testsThread.US_001_TC_002_Email_Voraussetzungen@34cd072c]" name="tearDown" is-config="true" duration-ms="738" started-at="2022-12-02T16:53:41 MEZ" finished-at="2022-12-02T16:53:42 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testsThread.US_001_TC_002_Email_Voraussetzungen@34cd072c]" name="afterClass" is-config="true" duration-ms="1" started-at="2022-12-02T16:53:42 MEZ" finished-at="2022-12-02T16:53:42 MEZ">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testsThread.US_001_TC_002_Email_Voraussetzungen -->
+    </test> <!-- zwei Test -->
+  </suite> <!-- paralel test -->
 </testng-results>

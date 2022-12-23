@@ -25,7 +25,8 @@ public class US_001_TC_003_Benutzername_Voraussetzungen extends TestBaseThread {
 
         threadLocalDriver.get().get(ConfigReader.getProperty("base_url"));
 
-        ReusableMethods.shadowCookies(threadLocalDriver.get(), "einwilligung_cookies_shadow").click();
+        Thread.sleep(2000);
+        ReusableMethods.shadowCookies(threadLocalDriver.get(), "alleakzeptieren_cookies_shadow").click();
 
         loginPageTestBase.kundenPortalButton.click();
 
@@ -33,7 +34,7 @@ public class US_001_TC_003_Benutzername_Voraussetzungen extends TestBaseThread {
 
         loginPageTestBase.registrierungButton.click();
 
-        ReusableMethods.shadowCookies(threadLocalDriver.get(), "registirierung_cookies_shadow").click();
+        ReusableMethods.shadowCookies(threadLocalDriver.get(), "nur_wesentliche_cookies_shadow").click();
 
         loginPageTestBase.emailTextFeld.click();
         actions.sendKeys(ConfigReader.getProperty("gueltige_email_registerierung")).perform();
@@ -49,23 +50,25 @@ public class US_001_TC_003_Benutzername_Voraussetzungen extends TestBaseThread {
     }
     @Test(groups = {"regression"}, dataProvider = "BenutzerName", dataProviderClass = DataProviderUS_001.class)
 
-    public void US001_TC_003_Benutzernahme_Voraussetzungen_sonderZeichenUsw(String benutzerName) throws IOException {
+    public void US001_TC_003_Benutzernahme_Voraussetzungen_sonderZeichenUsw(String benutzerName) throws IOException, InterruptedException {
 
         LoginPageTestBase loginPageTestBase = new LoginPageTestBase(threadLocalDriver.get());
         Actions actions = new Actions(threadLocalDriver.get());
 
         threadLocalDriver.get().get(ConfigReader.getProperty("base_url"));
 
+        Thread.sleep(3000);
         //ReusableMethods.waitExpilicit(threadLocalDriver.get(), ReusableMethods.shadowCookies(threadLocalDriver.get(), "einwilligung_cookies_shadow"));
-        ReusableMethods.shadowCookies(threadLocalDriver.get(), "einwilligung_cookies_shadow").click();
+        ReusableMethods.shadowCookies(threadLocalDriver.get(), "alleakzeptieren_cookies_shadow").click();
 
         loginPageTestBase.kundenPortalButton.click();
 
+        Thread.sleep(2000);
         loginPageTestBase.webWersion.click();
 
         loginPageTestBase.registrierungButton.click();
 
-        ReusableMethods.shadowCookies(threadLocalDriver.get(), "registirierung_cookies_shadow").click();
+        ReusableMethods.shadowCookies(threadLocalDriver.get(), "nur_wesentliche_cookies_shadow").click();
 
         loginPageTestBase.emailTextFeld.click();
         actions.sendKeys(ConfigReader.getProperty("gueltige_email_registerierung")).perform();

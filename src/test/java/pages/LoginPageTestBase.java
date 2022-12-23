@@ -61,4 +61,7 @@ public class LoginPageTestBase {
 
     @FindBy(xpath = "//p[contains(text(),'Leider ist ein technisches Problem')]")
     public WebElement tecnischesProblemMeldung;
+
+    @FindBy(xpath = "//*[text()='Ihre Eingaben entsprechen nicht der Barmenia Vorgaben. Bitte überprüfen Sie Ihre Eingaben.']")
+    public WebElement nichtEntsprechendeEingabenMeldung;
 }

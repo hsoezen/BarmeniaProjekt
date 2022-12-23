@@ -141,7 +141,7 @@ public class ReusableMethods {
 
     public static void waitExpilicit(WebDriver driver, WebElement element) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        wait.until(ExpectedConditions.invisibilityOf(element));
+        wait.until(ExpectedConditions.visibilityOf(element));
     }
 }
 
