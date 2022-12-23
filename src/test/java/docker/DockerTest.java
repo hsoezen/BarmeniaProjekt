@@ -13,7 +13,6 @@ import java.net.URL;
 import java.time.Duration;
 
 public class DockerTest {
-
     WebDriver driver;
     static final String APP_URL = "https://www.google.com";
     static final String HOST_URL = "http://localhost:4444"; //chrome

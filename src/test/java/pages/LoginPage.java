@@ -11,7 +11,7 @@ import java.util.List;
 
 public class LoginPage {
 
-    public LoginPage() throws MalformedURLException {
+    public LoginPage() {
 
         PageFactory.initElements(Driver.getDriver(), this);
     }

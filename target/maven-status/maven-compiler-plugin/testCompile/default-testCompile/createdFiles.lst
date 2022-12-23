@@ -1,6 +1,5 @@
 testsThread\US_001_TC_003_Benutzername_Voraussetzungen.class
 tests\US_001_Mein_Barmenia_Registirieren.class
-tests\FehlerEx2.class
 utilities\TestBaseThreadDocker.class
 pages\LoginPage.class
 docker\DockerTest2.class
@@ -9,7 +8,6 @@ testsThread\TestMitDocker.class
 utilities\dataProviders\DataProviderTNG.class
 probe\LidlTest2.class
 probe\WarumNichtParallel.class
-tests\Hooks.class
 docker\DockerTest4MitDockerDriver.class
 probe\FehlerEx.class
 utilities\DriverTestNG.class
@@ -18,7 +16,6 @@ utilities\ReusableMethods.class
 docker\DockerTest3.class
 tests\US_002.class
 testsThread\US_001_TC_001_Registirierung_mit_gueltigen_Daten.class
-tests\Eclipse.class
 utilities\Driver.class
 utilities\dataProviders\DataProviderUS_001.class
 utilities\TestBaseThread.class

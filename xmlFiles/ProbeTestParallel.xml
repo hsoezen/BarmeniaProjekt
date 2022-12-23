@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="paralel" parallel="methods" thread-count="2">
+    <test name="name" parallel="methods" thread-count="2">
+        <classes>
+            <class name="tests.US_001_Mein_Barmenia_Registirieren">
+            </class>
+
+        </classes>
+    </test>
+</suite>

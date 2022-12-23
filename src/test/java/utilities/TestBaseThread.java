@@ -27,6 +27,10 @@ public class TestBaseThread {
         threadLocalDriver.get().manage().window().maximize();
 
     }
+    public WebDriver getDriver(){
+
+        return threadLocalDriver.get();
+    }
     @AfterMethod(groups = {"smoke","login", "regression"})
     public void tearDown(){
         threadLocalDriver.get().quit();
